@@ -25,6 +25,13 @@ header{
     height: calc(100vh - 122px);
     min-height: 465px;
 }
+.containerFull{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr;
+    height: calc(100vh - 122px);
+    min-height: 465px;
+}
 .box{
     display: flex;
     flex-direction: column;
@@ -68,10 +75,10 @@ header{
 .primary{
     background: white;
     border: none;
-    &.next{
-        margin: 0 0 0 auto;
-    }
     &:focus{
         outline: none;
     }
+}
+.next{
+    margin: 0 0 0 auto;
 }
